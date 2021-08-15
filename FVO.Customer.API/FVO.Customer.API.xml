@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FVO.Customer.API</name>
+    </assembly>
+    <members>
+        <member name="M:FVO.Customer.API.Controllers.CustomersController.PostAsyncOption1(FVO.Customer.API.Option1.Models.CustomerInputModelOption1)">
+             <summary>
+             Opção 1 - Validação interna no Input Model (ideal para retornar um Custom Response)
+             </summary>   
+             <remarks>
+             Exemplo request:
+            
+                 POST / Customer
+                 {
+                     "name": "Mario Silva",
+                     "dateBirth": "2021-08-14T22:06:19.232Z",
+                     "rg": "12.345.678-9",
+                     "cpf": "123.456.789-10"
+                 }
+             </remarks>        
+        </member>
+        <member name="M:FVO.Customer.API.Controllers.CustomersController.PostAsyncOption2(FVO.Customer.API.Option2.Models.CustomerInputModelOption2)">
+             <summary>
+             Opção 2 - Validação através de um arquivo Validator
+             </summary>   
+             <remarks>
+             Exemplo request:
+            
+                 POST / Customer
+                 {
+                     "name": "Mario Silva",
+                     "dateBirth": "2021-08-14T22:06:19.232Z",
+                     "rg": "12.345.678-9",
+                     "cpf": "123.456.789-10"
+                 }
+             </remarks>        
+        </member>
+        <member name="M:FVO.Customer.API.Controllers.CustomersController.PostAsyncOption3(FVO.Customer.API.Option3.Models.CustomerInputModelOption3)">
+             <summary>
+             Opção 3 - Validação através de um Action Filter em conjunto com um arquivo Validator (Retorna só as mensagens de erro)
+             </summary>   
+             <remarks>
+             Exemplo request:
+            
+                 POST / Customer
+                 {
+                     "name": "Mario Silva",
+                     "dateBirth": "2021-08-14T22:06:19.232Z",
+                     "rg": "12.345.678-9",
+                     "cpf": "123.456.789-10"
+                 }
+             </remarks>        
+        </member>
+        <member name="M:FVO.Customer.API.Controllers.CustomersController.PostAsyncOption4(FVO.Customer.API.Option4.Models.CustomerInputModelOption4)">
+             <summary>
+             Opção 4 - Validação através de Data Annotations
+             </summary>   
+             <remarks>
+             Exemplo request:
+            
+                 POST / Customer
+                 {
+                     "name": "Mario Silva",
+                     "dateBirth": "2021-08-14T22:06:19.232Z",
+                     "rg": "12.345.678-9",
+                     "cpf": "123.456.789-10"
+                 }
+             </remarks>        
+        </member>
+    </members>
+</doc>
